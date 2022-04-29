@@ -11,7 +11,31 @@ $black: black;
 $darkgray: #303030;
 $mediumgray: #595959;
 $lightgray: #CECECE;
+$lightgraytrans: #cecece60;
 $darkcyan: #55ACEE;
 $lightcyan: #40C4FF;
 $gold: #FFD740;
 $red: #EE2852;
+
+// CUSTOM COMPONENTS
+.cyan-btn {
+    font-size: 1.5rem;
+    font-family: $roboto;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    display: inline-block;
+    color: $white;
+    background: $lightcyan;
+    border: none;
+    padding: 30px 80px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        color: $lightcyan;
+        background: $white;
+    }
+    &:focus{
+        color: $darkcyan;
+        background: $lightgray;
+    }
+  }

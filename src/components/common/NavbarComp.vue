@@ -75,6 +75,7 @@ export default {
   justify-content: space-between;
   height: 180px;
   padding: 0 $def-padding;
+  z-index: 999;
   #logo {
     margin: auto 0;
     img {

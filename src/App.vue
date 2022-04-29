@@ -38,4 +38,24 @@ html{
 ul{
   list-style: none;
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: $lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+  background: $lightcyan;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: $darkcyan;
+}
+
+::selection{
+  background: $lightcyan;
+}
 </style>
