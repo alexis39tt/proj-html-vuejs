@@ -61,12 +61,25 @@ export default {
       ],
     };
   },
+  mounted() {
+    let navbar = document.querySelector("#navbar");
+    window.onscroll = () => {
+      if (window.scrollY > 180) {
+        navbar.classList.add("navbar-bg");
+      } else {
+        navbar.classList.remove("navbar-bg");
+      }
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../mixin";
 
+.navbar-bg {
+  background: $lightgraytrans;
+}
 #navbar {
   position: fixed;
   top: 0;
@@ -76,6 +89,7 @@ export default {
   height: 180px;
   padding: 0 $def-padding;
   z-index: 999;
+  transition: 0.3s;
   #logo {
     margin: auto 0;
     img {
