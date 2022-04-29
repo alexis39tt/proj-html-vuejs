@@ -122,10 +122,10 @@ export default {
     margin: auto 0;
     div {
       position: relative;
-      &:hover{
-          div{
-              background-color: $darkcyan;
-          }
+      &:hover {
+        div {
+          background-color: $darkcyan;
+        }
       }
       img {
         cursor: pointer;
