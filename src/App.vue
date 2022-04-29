@@ -30,4 +30,12 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  font-size: 22px;
+}
+
+ul{
+  list-style: none;
+}
 </style>
