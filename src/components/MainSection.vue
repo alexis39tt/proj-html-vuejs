@@ -5,6 +5,7 @@
     <MainComp3 />
     <MainComp4 />
     <MainComp5 />
+    <MainComp6 />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import MainComp2 from "./common/MainComp2.vue";
 import MainComp3 from "./common/MainComp3.vue";
 import MainComp4 from "./common/MainComp4.vue";
 import MainComp5 from "./common/MainComp5.vue";
+import MainComp6 from "./common/MainComp6.vue"
 
 export default {
   name: "MainSection",
@@ -22,7 +24,8 @@ export default {
     MainComp2,
     MainComp3,
     MainComp4,
-    MainComp5
+    MainComp5,
+    MainComp6
   },
 };
 </script>
