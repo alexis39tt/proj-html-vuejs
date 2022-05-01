@@ -1,9 +1,11 @@
 <template>
   <section>
-    <div class="courses">
-      <div class="course" v-for="(elm, i) in courses" :key="i">
-        <img :src="require('../../assets/img/' + elm.icon)" :alt="elm.name" />
-        <p>{{ elm.name }}</p>
+    <div class="container">
+      <div class="courses">
+        <div class="course" v-for="(elm, i) in courses" :key="i">
+          <img :src="require('../../assets/img/' + elm.icon)" :alt="elm.name" />
+          <p>{{ elm.name }}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -47,11 +49,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../mixin";
-.courses{
+.courses {
   display: flex;
   justify-content: space-between;
   padding: 100px $def-padding;
-  .course{
+  .course {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,14 +62,14 @@ export default {
     padding: 90px 70px;
     cursor: pointer;
     transition: $short-trans;
-    &:hover{
+    &:hover {
       border: 1px solid $lightgray;
       background: $lightcyantranshover;
     }
-    img{
+    img {
       margin-bottom: 10px;
     }
-    p{
+    p {
       font-family: $merryweather;
       font-weight: 600;
       color: $darkgray;

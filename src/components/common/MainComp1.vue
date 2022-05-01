@@ -1,30 +1,32 @@
 <template>
   <section>
-    <div class="hero">
-      <img
-        v-for="(elm, i) in bg_images"
-        :key="i"
-        :src="require('../../assets/img/' + elm.img_url)"
-        alt="hero"
-        v-show="count == i"
-      />
-      <div class="text">
-        <h1>Contemporary Ideas</h1>
-        <p>
-          Lorem Ipsn gravida nibh vel velit auctor aliquetnean sollicitudin,
-          lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
-          odio sit amet nibcursus a sit amet mauris.
-        </p>
-        <button class="cyan-btn">register now</button>
-      </div>
-      <div class="img-selectors">
-        <div
-          class="circle"
+    <div class="container">
+      <div class="hero">
+        <img
           v-for="(elm, i) in bg_images"
           :key="i"
-          @click="changeslide(i)"
-          :class="i == count ? 'selected' : 'unselected'"
-        ></div>
+          :src="require('../../assets/img/' + elm.img_url)"
+          alt="hero"
+          v-show="count == i"
+        />
+        <div class="text">
+          <h1>Contemporary Ideas</h1>
+          <p>
+            Lorem Ipsn gravida nibh vel velit auctor aliquetnean sollicitudin,
+            lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
+            odio sit amet nibcursus a sit amet mauris.
+          </p>
+          <button class="cyan-btn">register now</button>
+        </div>
+        <div class="img-selectors">
+          <div
+            class="circle"
+            v-for="(elm, i) in bg_images"
+            :key="i"
+            @click="changeslide(i)"
+            :class="i == count ? 'selected' : 'unselected'"
+          ></div>
+        </div>
       </div>
     </div>
   </section>

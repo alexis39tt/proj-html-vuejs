@@ -1,19 +1,21 @@
 <template>
   <section>
-    <div class="text">
-      <h2>
-        The Trusted Name <br />
-        for In-Home Tutoring.
-      </h2>
-      <p>
-        Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,
-        lorem quis bibendum auci elit consequat ipsutis sem nibh id eis sed odio
-        sit amet nibh vulputate cursus mauris.
-      </p>
-      <a href="/courses"><span>learn more</span></a>
-    </div>
-    <div class="img">
-      <img src="../../assets/img/h5-img-1.jpg" alt="learning" />
+    <div class="container">
+      <div class="text">
+        <h2>
+          The Trusted Name <br />
+          for In-Home Tutoring.
+        </h2>
+        <p>
+          Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,
+          lorem quis bibendum auci elit consequat ipsutis sem nibh id eis sed
+          odio sit amet nibh vulputate cursus mauris.
+        </p>
+        <a href="/courses"><span>learn more</span></a>
+      </div>
+      <div class="img">
+        <img src="../../assets/img/h5-img-1.jpg" alt="learning" />
+      </div>
     </div>
   </section>
 </template>
@@ -59,8 +61,8 @@ export default {
 }
 .img {
   padding: 0 $def-padding;
-  img{
-      width: 100%;
+  img {
+    width: 100%;
   }
 }
 </style>
