@@ -3,6 +3,7 @@
     <div class="courses">
       <div class="course" v-for="(elm, i) in courses" :key="i">
         <img :src="require('../../assets/img/' + elm.icon)" :alt="elm.name" />
+        <p>{{ elm.name }}</p>
       </div>
     </div>
   </section>
@@ -13,7 +14,6 @@ export default {
   name: "MainComp2",
   data() {
     return {
-      publicPath: process.env.BASE_URL,
       courses: [
         {
           name: "Languages",
@@ -47,4 +47,30 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../mixin";
+.courses{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px $def-padding;
+  .course{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $lightcyantrans;
+    border: 1px solid $lightgraytrans;
+    padding: 90px 70px;
+    cursor: pointer;
+    transition: $short-trans;
+    &:hover{
+      border: 1px solid $lightgray;
+      background: $lightcyantranshover;
+    }
+    img{
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: $merryweather;
+      font-weight: 600;
+    }
+  }
+}
 </style>

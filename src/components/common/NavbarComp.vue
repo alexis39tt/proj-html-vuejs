@@ -79,7 +79,7 @@ export default {
   height: 180px;
   padding: 0 $def-padding;
   z-index: 999;
-  transition: 0.3s;
+  transition: $short-trans;
   #logo {
     margin: auto 0;
     img {
@@ -104,7 +104,7 @@ export default {
           font-family: $roboto;
           font-size: 1.2rem;
           color: $white;
-          transition: color 0.3s;
+          transition: color $short-trans;
         }
         li::after {
           content: "";
@@ -112,7 +112,7 @@ export default {
           display: inline-block;
           transform: translateY(-170px);
           border-bottom: 2px solid $white;
-          transition: 0.5s;
+          transition: $medium-trans;
         }
       }
     }

@@ -5,6 +5,11 @@ $roboto: 'Roboto', sans-serif;
 // MARGINS AND PADDINGS
 $def-padding: 60px;
 
+// TRANSITIONS
+$short-trans: 0.3s;
+$medium-trans: 0.5s;
+$long-trans: 1s;
+
 // COLOR PALETTE
 $white: white;
 $black: black;
@@ -14,6 +19,8 @@ $lightgray: #CECECE;
 $lightgraytrans: #cecece60;
 $darkcyan: #55ACEE;
 $lightcyan: #40C4FF;
+$lightcyantrans: #F2F8FC;
+$lightcyantranshover: #F7FDFF;
 $gold: #FFD740;
 $red: #EE2852;
 

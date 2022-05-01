@@ -35,7 +35,7 @@ export default {
   font-family: $roboto;
   text-align: center;
   cursor: pointer;
-  transition: 0.4s;
+  transition: $short-trans;
   display: none;
   z-index: 9;
   &:hover {
@@ -49,7 +49,7 @@ export default {
     width: 60px;
     margin: auto;
     filter: invert(1);
-    transition: 0.4s;
+    transition: $short-trans;
   }
   p {
     margin: -10px 0 10px;
