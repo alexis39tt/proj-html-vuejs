@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="bg-image">
+    <div class="hero">
       <img
         src="../../assets/img/h5-slide-1-background.jpg"
         alt="hero"
@@ -70,7 +70,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../mixin";
 
-.bg-image {
+.hero {
   position: relative;
   overflow: hidden;
   img {
