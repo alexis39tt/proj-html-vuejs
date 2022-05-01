@@ -38,6 +38,7 @@ export default {
     font-family: $roboto;
     font-size: 1.5rem;
     color: $mediumgray;
+    line-height: $def-lineheight;
     margin: 30px 0;
   }
   a {
