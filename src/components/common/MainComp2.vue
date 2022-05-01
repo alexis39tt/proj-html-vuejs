@@ -2,7 +2,7 @@
   <section>
     <div class="courses">
       <div class="course" v-for="(elm, i) in courses" :key="i">
-        <img :src="`${publicPath}../../src/assets/img/${elm.icon}`" :alt="elm.name" />
+        <img :src="require('../../assets/img/' + elm.icon)" :alt="elm.name" />
       </div>
     </div>
   </section>

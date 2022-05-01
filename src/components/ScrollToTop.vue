@@ -13,16 +13,6 @@ export default {
           window.scrollTo(0, 0)
       }
   },
-  mounted() {
-    let button = document.querySelector("#scroll-to-top");
-    window.onscroll = () => {
-      if (window.scrollY > 180) {
-        button.classList.add("visible");
-      } else {
-        button.classList.remove("visible");
-      }
-    };
-  },
 };
 </script>
 

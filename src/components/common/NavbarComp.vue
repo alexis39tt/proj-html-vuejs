@@ -61,16 +61,6 @@ export default {
       ],
     };
   },
-  mounted() {
-    let navbar = document.querySelector("#navbar");
-    window.onscroll = () => {
-      if (window.scrollY > 180) {
-        navbar.classList.add("navbar-bg");
-      } else {
-        navbar.classList.remove("navbar-bg");
-      }
-    };
-  },
 };
 </script>
 
@@ -78,7 +68,7 @@ export default {
 @import "../../mixin";
 
 .navbar-bg {
-  background: $lightgraytrans;
+  background: $lightgraytrans !important;
 }
 #navbar {
   position: fixed;

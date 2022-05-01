@@ -2,19 +2,11 @@
   <section>
     <div class="hero">
       <img
-        src="../../assets/img/h5-slide-1-background.jpg"
+        v-for="(elm, i) in bg_images"
+        :key="i"
+        :src="require('../../assets/img/' + elm.img_url)"
         alt="hero"
-        v-show="count == 0"
-      />
-      <img
-        src="../../assets/img/h5-slide-2-background.jpg"
-        alt="hero"
-        v-show="count == 1"
-      />
-      <img
-        src="../../assets/img/h5-slide-3-background.jpg"
-        alt="hero"
-        v-show="count == 2"
+        v-show="count == i"
       />
       <div class="text">
         <h1>Contemporary Ideas</h1>
@@ -44,7 +36,17 @@ export default {
   data() {
     return {
       count: 0,
-      bg_images: ["reunion", "girl", "working"],
+      bg_images: [
+        {
+          img_url: "h5-slide-1-background.jpg",
+        },
+        {
+          img_url: "h5-slide-2-background.jpg",
+        },
+        {
+          img_url: "h5-slide-3-background.jpg",
+        },
+      ],
     };
   },
   methods: {
@@ -111,8 +113,8 @@ export default {
       cursor: pointer;
       z-index: 2;
     }
-    .unselected{
-        background-color: $lightgraytrans;
+    .unselected {
+      background-color: $lightgraytrans;
     }
     .selected {
       border: 2px solid $white;
