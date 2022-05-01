@@ -70,6 +70,7 @@ export default {
     p{
       font-family: $merryweather;
       font-weight: 600;
+      color: $darkgray;
     }
   }
 }
