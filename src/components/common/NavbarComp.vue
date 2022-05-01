@@ -68,7 +68,7 @@ export default {
 @import "../../mixin";
 
 .navbar-bg {
-  background: $lightgraytrans !important;
+  background: $lightcyan;
 }
 #navbar {
   position: fixed;
@@ -95,9 +95,6 @@ export default {
       a {
         text-decoration: none;
         &:hover {
-          li {
-            color: $darkcyan;
-          }
           li::after {
             width: 100%;
           }
@@ -114,7 +111,7 @@ export default {
           width: 0%;
           display: inline-block;
           transform: translateY(-170px);
-          border-bottom: 2px solid $darkcyan;
+          border-bottom: 2px solid $white;
           transition: 0.5s;
         }
       }
