@@ -53,6 +53,7 @@ ul {
 
 ::-webkit-scrollbar-thumb {
   background: $lightcyan;
+  border: 2px solid $lightgray;
 }
 
 ::-webkit-scrollbar-thumb:hover {

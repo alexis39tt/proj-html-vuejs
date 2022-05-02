@@ -1,16 +1,18 @@
 <template>
-    <footer>
-
-    </footer>
+  <footer>
+    <FooterComp1 />
+  </footer>
 </template>
 
 <script>
-
-export default{
-    name: 'FooterSection'
-}
+import FooterComp1 from "./common/FooterComp1";
+export default {
+  name: "FooterSection",
+  components: {
+    FooterComp1,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>

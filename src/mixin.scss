@@ -1,8 +1,6 @@
 // FONT FAMILIES
-$merryweather: 'Merriweather',
-serif;
-$roboto: 'Roboto',
-sans-serif;
+$merryweather: 'Merriweather', serif;
+$roboto: 'Roboto', sans-serif;
 
 // MARGINS AND PADDINGS
 $def-padding: 60px;
@@ -11,13 +9,13 @@ $def-lineheight: 2.2rem;
 // TRANSITIONS AND FILTERS
 $short-trans: 0.3s;
 $medium-trans: 0.5s;
-$long-trans: 1s;
 $cyan-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 $red-filter: invert(0.5) sepia(1) saturate(100) hue-rotate(342deg);
 
 // COLOR PALETTE
 $white: white;
 $black: black;
+$footergray: #222222;
 $darkgray: #303030;
 $mediumgray: #595959;
 $lightgray: #CECECE;
@@ -27,19 +25,16 @@ $lightcyan: #40C4FF;
 $lightcyantrans: #F2F8FC;
 $lightcyantranshover: #F7FDFF;
 $gold: #FFD740;
-$red: #EE2852;
 
 // CUSTOM COMPONENTS
 .centered-section-title {
     text-align: center;
     margin: 200px 270px;
-
     h2 {
         font-family: $merryweather;
         font-size: 3rem;
         color: $darkgray;
     }
-
     p {
         font-family: $roboto;
         font-size: 1.5rem;
@@ -70,12 +65,10 @@ $red: #EE2852;
     padding: 30px 80px;
     cursor: pointer;
     transition: $short-trans;
-
     &:hover {
         color: $lightcyan;
         background: $white;
     }
-
     &:focus {
         color: $darkcyan;
         background: $lightgray;
@@ -95,13 +88,11 @@ $red: #EE2852;
     padding: 15px 40px;
     cursor: pointer;
     transition: $short-trans;
-
     &:hover {
         color: $white;
         background: $lightcyan;
         border-color: $lightcyan;
     }
-
     &:focus {
         color: $lightgray;
         background: $darkcyan;
