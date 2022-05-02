@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" v-show="course.page == page">
     <div class="img">
       <img :src="require('../../../assets/img/' + course.img)" alt="" />
     </div>
@@ -33,6 +33,7 @@
 export default {
   name: "CourseCard",
   props: {
+    page: Number,
     course: Object,
   },
 };
@@ -44,6 +45,7 @@ export default {
   width: 550px;
   max-width: 30%;
   border: 1px solid $lightgray;
+  background: $white;
   cursor: pointer;
   transition: $short-trans;
   &:hover {
@@ -101,15 +103,15 @@ export default {
         filter: opacity(0.2);
       }
       p {
-          color: $lightgray;
+        color: $lightgray;
         margin-left: 5px;
         font-family: $roboto;
       }
     }
     .tag {
-        img{
-            transform: scaleX(-1);
-        }
+      img {
+        transform: scaleX(-1);
+      }
       p {
         font-size: 1.2rem;
         font-weight: bold;
