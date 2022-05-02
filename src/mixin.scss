@@ -6,10 +6,11 @@ $roboto: 'Roboto', sans-serif;
 $def-padding: 60px;
 $def-lineheight: 2.2rem;
 
-// TRANSITIONS
+// TRANSITIONS AND FILTERS
 $short-trans: 0.3s;
 $medium-trans: 0.5s;
 $long-trans: 1s;
+$cyan-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 
 // COLOR PALETTE
 $white: white;
@@ -37,7 +38,7 @@ $red: #EE2852;
     border: none;
     padding: 30px 80px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: $short-trans;
     &:hover{
         color: $lightcyan;
         background: $white;

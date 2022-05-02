@@ -175,7 +175,7 @@ export default {
     }
     .check {
       vertical-align: middle;
-      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+      filter: $cyan-filter;
     }
     .section-img {
       position: absolute;
