@@ -94,7 +94,6 @@ export default {
 @import "../../mixin";
 .container {
   padding: 150px $def-padding 100px;
-  background: $footergray-bg;
   display: flex;
   .text {
     width: 75%;
@@ -103,18 +102,17 @@ export default {
       width: 33%;
       img {
         height: 50px;
-        margin-bottom: 22px;
+        margin-bottom: 42px;
       }
     }
   }
   .col {
     padding-right: 20px;
-
     h3 {
       font-family: $merryweather;
       font-size: 1.8rem;
       color: $white;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
     h4 {
       font-size: 1.2rem;
@@ -154,9 +152,5 @@ export default {
       }
     }
   }
-  /*hr {
-    border: 1px solid $darkgray;
-    width: 100%;
-  }*/
 }
 </style>
