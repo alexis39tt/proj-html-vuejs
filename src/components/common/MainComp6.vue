@@ -16,10 +16,14 @@
         <h2>{{ sections[selected].title }}</h2>
         <p class="content">{{ sections[selected].content }}</p>
         <p v-for="(elm, i) in sections[selected].checks" :key="'b' + i">
-          <span>&#10004;</span>
+          <img src="../../assets/svg/check.svg" alt="check" class="check" />
           {{ elm }}
         </p>
-        <img :src="require('../../assets/img/' + sections[selected].icon)" :alt="sections[selected].name">
+        <img
+          class="section-img"
+          :src="require('../../assets/img/' + sections[selected].icon)"
+          :alt="sections[selected].name"
+        />
       </div>
     </div>
   </section>
@@ -124,6 +128,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../mixin";
 .container {
+  height: 880px;
   padding: 150px $def-padding;
   display: flex;
   .sections {
@@ -157,18 +162,22 @@ export default {
     }
     p.content {
       line-height: $def-lineheight;
+      margin: 30px 0 50px;
     }
     p {
       font-family: $roboto;
       font-size: 1.5rem;
       color: $mediumgray;
-      line-height: 0.8rem;
-      margin: 30px 0 50px;
+      line-height: 3rem;
       span {
         color: $lightcyan;
       }
     }
-    img{
+    .check {
+      vertical-align: middle;
+      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+    }
+    .section-img {
       position: absolute;
       bottom: 0;
       right: 0;
