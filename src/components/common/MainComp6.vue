@@ -19,6 +19,7 @@
           <span>&#10004;</span>
           {{ elm }}
         </p>
+        <img :src="require('../../assets/img/' + sections[selected].icon)" :alt="sections[selected].name">
       </div>
     </div>
   </section>
@@ -34,6 +35,7 @@ export default {
         {
           name: "What We Do",
           title: "Learning Possibilities",
+          icon: "h12-tabs-icon-1.png",
           content:
             "Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id eis sed odio sit amet nibh vulputate.",
           checks: [
@@ -46,6 +48,7 @@ export default {
         {
           name: "Degree Programme",
           title: "Degree Programme",
+          icon: "h12-tabs-icon-2.png",
           content:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu tristique nulla. Pellentesque posuere facilisis sem, ac volutpat lectus placerat et.",
           checks: [
@@ -58,6 +61,7 @@ export default {
         {
           name: "Career Achievements",
           title: "Career Achievements",
+          icon: "h12-tabs-icon-3.png",
           content:
             "Nam non ex a ipsum vulputate mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam posuere ex in faucibus varius.",
           checks: [
@@ -70,6 +74,7 @@ export default {
         {
           name: "Personal Management",
           title: "Personal Management",
+          icon: "h12-tabs-icon-4.png",
           content:
             "Nullam nec luctus ex, eget pulvinar metus. Quisque placerat convallis feugiat. In hac habitasse platea dictumst. Nam porta nisl ut libero varius condimentum.",
           checks: [
@@ -82,6 +87,7 @@ export default {
         {
           name: "Steps To Success",
           title: "Steps To Success",
+          icon: "h12-tabs-icon-5.png",
           content:
             "Nullam ut quam ac ex venenatis bibendum. Suspendisse consectetur ex enim, in dapibus ligula facilisis id. Nullam id nisi felis. Mauris id mauris odio. Integer at sapien massa.",
           checks: [
@@ -94,6 +100,7 @@ export default {
         {
           name: "Knowledge Transfer",
           title: "Knowledge Transfer",
+          icon: "h12-tabs-icon-6.png",
           content:
             "Duis lobortis leo ante, ut vulputate est finibus tincidunt. Suspendisse sit amet pulvinar metus. In non dapibus urna, in euismod risus.",
           checks: [
@@ -142,6 +149,7 @@ export default {
   .text {
     width: 1300px;
     padding: 0 $def-padding;
+    position: relative;
     h2 {
       font-family: $merryweather;
       font-size: 3rem;
@@ -159,6 +167,11 @@ export default {
       span {
         color: $lightcyan;
       }
+    }
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }
