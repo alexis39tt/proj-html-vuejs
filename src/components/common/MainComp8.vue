@@ -128,7 +128,6 @@ export default {
   .table {
     margin: 0 $def-padding;
     display: flex;
-    background: $white;
     .buttons {
       position: absolute;
       display: flex;
@@ -168,6 +167,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      background: $white;
       img {
         width: 40%;
         margin: auto;
@@ -178,11 +178,13 @@ export default {
       border-top: none;
       padding: 20px 50px;
       height: 70px;
+      background: $white;
     }
     .empty {
       border-left: none;
       border-bottom: none;
       height: 100px;
+      background: none;
     }
     .cell-names {
       display: flex;
