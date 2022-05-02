@@ -76,10 +76,11 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 180px;
+  height: 120px;
   padding: 0 $def-padding;
   z-index: 999;
   transition: $short-trans;
+  transform: translateY(30px);
   #logo {
     margin: auto 0;
     img {
@@ -88,12 +89,13 @@ export default {
   }
   #links {
     width: 100%;
-    line-height: 180px;
+    line-height: 120px;
     ul {
       display: flex;
       justify-content: space-evenly;
       a {
         text-decoration: none;
+        max-height: 50px;
         &:hover {
           li::after {
             width: 100%;
@@ -103,14 +105,15 @@ export default {
           text-transform: uppercase;
           font-family: $roboto;
           font-size: 1.2rem;
+          max-height: 50px;
           color: $white;
-          transition: color $short-trans;
+          transition: color $medium-trans;
         }
         li::after {
           content: "";
           width: 0%;
           display: inline-block;
-          transform: translateY(-170px);
+          transform: translateY(-110px);
           border-bottom: 2px solid $white;
           transition: $medium-trans;
         }
