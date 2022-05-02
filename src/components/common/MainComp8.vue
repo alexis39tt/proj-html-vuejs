@@ -9,6 +9,17 @@
         </p>
       </div>
       <div class="table">
+        <div class="buttons">
+          <div>
+            <img
+              src="../../assets/img/60699165_459440804828391_7177805742290763776_o.png"
+              alt="mikado logo"
+            />
+          </div>
+          <div>
+            <img src="../../assets/svg/cart.svg" alt="cart" class="cart" />
+          </div>
+        </div>
         <div class="cell-names">
           <div class="header">
             <h2>{{ cell_names.header }}</h2>
@@ -112,10 +123,38 @@ export default {
 @import "../../mixin";
 .container {
   background-image: url("../../assets/img/page-background-img.png");
+  position: relative;
+  padding-bottom: 150px;
   .table {
     margin: 0 $def-padding;
     display: flex;
     background: $white;
+    .buttons {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 130px;
+      top: 700px;
+      right: 0;
+      div {
+        width: 55px;
+        height: 55px;
+        background: white;
+        display: flex;
+        box-shadow: 2px 2px 10px 0px $lightgray;
+        cursor: pointer;
+        transition: $short-trans;
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+      img.cart {
+        width: 50%;
+        margin: auto;
+        filter: $red-filter;
+      }
+    }
     h2 {
       font-family: $merryweather;
       font-size: 2rem;
@@ -168,8 +207,8 @@ export default {
         .header {
           border-top-color: $lightcyan;
         }
-        .cells{
-            background: $lightcyantranshover;
+        .cells {
+          background: $lightcyantranshover;
         }
       }
     }
@@ -194,7 +233,7 @@ export default {
       }
       .cross {
         width: 10%;
-        filter: opacity(0.5)
+        filter: opacity(0.5);
       }
     }
     .buttoncell {
