@@ -142,6 +142,9 @@ export default {
       h3 {
         font-family: $merryweather;
       }
+      &:hover{
+        background: $lightcyantrans;
+      }
     }
     .section:last-of-type {
       border-bottom: 2px solid $lightgray;

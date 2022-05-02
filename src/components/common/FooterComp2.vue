@@ -76,7 +76,11 @@ export default {
         height: 20px;
         margin-left: 30px;
         filter: invert(0.5) opacity(0.9);
+        transition: $short-trans;
         cursor: pointer;
+        &:hover{
+          filter: invert(0.5) opacity(0.9) brightness(1.2);
+        }
       }
     }
   }
