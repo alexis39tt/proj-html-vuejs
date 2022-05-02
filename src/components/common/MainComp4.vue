@@ -13,11 +13,11 @@
         </p>
         <div class="stats">
           <div class="stories">
-            <h2>{{ stories }}</h2>
+            <StoriesComp :stories="stories" />
             <p>User Stories</p>
           </div>
           <div class="events">
-            <h2>{{ events }}</h2>
+            <EventsComp :events="events" />
             <p>Events</p>
           </div>
         </div>
@@ -27,8 +27,14 @@
 </template>
 
 <script>
+import StoriesComp from "./subcomponents/StoriesComp.vue";
+import EventsComp from "./subcomponents/EventsComp.vue";
 export default {
   name: "MainComp4",
+  components: {
+    StoriesComp,
+    EventsComp
+  },
   data() {
     return {
       stories: 168,
