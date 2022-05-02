@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="container">
-      <div class="text">
+    <div class="container hex-bg">
+      <div class="centered-section-title">
         <h2>Popular Online Courses</h2>
         <p>
           Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,
@@ -159,27 +159,6 @@ export default {
 .container {
   border-top: 2px solid $lightgray;
   background-image: url("../../assets/img/page-background-img.png");
-  background-repeat: repeat;
-  background-size: 150%;
-  background-position: center;
-  overflow: hidden;
-  padding: $def-padding;
-  .text {
-    text-align: center;
-    margin: 200px 270px;
-    h2 {
-      font-family: $merryweather;
-      font-size: 3rem;
-      color: $darkgray;
-    }
-    p {
-      font-family: $roboto;
-      font-size: 1.5rem;
-      color: $mediumgray;
-      line-height: $def-lineheight;
-      margin: 20px 0 0;
-    }
-  }
   .courses {
     display: flex;
     justify-content: space-between;
